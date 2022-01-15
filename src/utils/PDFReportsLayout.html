@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <ul class="container"></ul>
+
+    <script>
+      const entries = entriesFromFunc;
+      const container = document.querySelector(".container");
+      document.createElement("li");
+
+      entries.forEach((entry) => {
+        const {start1, end1, start2, end2} = entry;
+        const listItem = document.createElement("li");
+        listItem.innerHTML = `start1: ${start1}; end1: ${end1}; start2: ${start2}; end2: ${end2}`;
+
+        container.appendChild(listItem);
+      });
+    </script>
+  </body>
+</html>
